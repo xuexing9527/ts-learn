@@ -8,16 +8,16 @@ const findPalindromeStr = () => {
   targetStrArr.value = []
   const len = s.length
   const dp = new Array(len).fill(0).map(_ => new Array(len).fill(0))
+
   const dpStr = new Array(len).fill(0).map(_ => new Array(len).fill(0))
-
-  for (let i = 0; i < len; i += 1) {
-    dp[i][i] = 1
-  }
-
   for (let i = 0; i < len; i += 1) {
     for (let j = 0; j < i + 1; j += 1) { 
       dpStr[i][j] = s.substring(j, i + 1) + Array(len - 1 - (i - j)).fill(' ').join('')
     }
+  }
+
+  for (let i = 0; i < len; i += 1) {
+    dp[i][i] = 1
   }
 
   for (let i = len - 2; i >= 0; i -= 1) {
