@@ -1,11 +1,11 @@
 <script setup lang="ts">
 interface Teacher {
-    name: string,
-    subject: string,
+    name: string;
+    subject: string;
 }
 
 interface Person {
-    name: string
+    name: string;
 }
 
 function showTypeGuardAndTypePredicates (someone: Person | Teacher) {

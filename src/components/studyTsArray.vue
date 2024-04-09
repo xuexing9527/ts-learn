@@ -1,15 +1,15 @@
 <script lang="ts">
 interface Person_In {
-    name: string
+    name: string;
 }
 
 type Person_Tp = {
-    name: string
+    name: string;
 }
 
 type Salary_Tp = {
-    salary: number
-    type: string,
+    salary: number;
+    type: string;
 }
 const arr: Person_Tp[] = [{ name: 'zs' }, { name: 's' }]
 console.log(arr)
@@ -25,13 +25,13 @@ const arrSalary: Em[] = [
 ]
 
 interface Eminterface extends Person_Tp {
-    salary: number,
-    type: string
+    salary: number;
+    type: string;
 }
 
 interface Eminterface extends Person_In {
-    salary: number,
-    type: string
+    salary: number;
+    type: string;
 }
 
 const arrEm: Partial<Eminterface>[] = [
@@ -64,14 +64,14 @@ console.log(arrs)
 
 // ** interface 定义类型，强调结构，注意没有 “=” 号
 interface PersonInterface {
-    name: string,
-    age: number
+    name: string;
+    age: number;
 }
 
 // ** type 定义 类型 别名，注意 type 定义中有 “=” 号，type Xx = ...，type 定义更灵活，强调别名，可以给interface 定义的类型 改个名字，如：type Xx = XxInterfaceType
 type PersonType = {
-    name: string,
-    age: number
+    name: string;
+    age: number;
 }
 
 const arr1: PersonType[] = [{ name: 'zs', age: 18 }]
