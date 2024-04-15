@@ -29,9 +29,9 @@ interface PayloadMsg {
 const arrayNumber: GenericsArray<number> = [1, 2, 3]
 const arrayString: GenericsArray<string> = ['1', '2', '3']
 
-fetch('xxxx').then((msg: Response) => {
+// fetch('xxxx').then((msg: Response) => {
     
-})
+// })
 const msg: PayloadMsg = {
     code: 0,
     msg: { infos: [{ id: 1, name: 'fn', age: 18, class: '1班' }], logs: [{ date: new Date().getTime(), handle: 'test log' }] }
